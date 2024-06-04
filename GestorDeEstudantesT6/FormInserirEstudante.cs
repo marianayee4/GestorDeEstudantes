@@ -21,5 +21,20 @@ namespace GestorDeEstudantesT6
         {
 
         }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            //exibe uma janela para procurar a imagem
+            OpenFileDialog selecionarImagem = new OpenFileDialog();
+
+            selecionarImagem.Filter = "Selecione a foto (*.jpg;*.png;*.gif)|*.jpg;*.png;*.gif";
+
+            selecionarImagem.ShowDialog();
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
